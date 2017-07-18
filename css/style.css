@@ -1,0 +1,350 @@
+html {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */ }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+input, textarea, select {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+*:focus {
+  outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #bebebe; }
+
+input:focus::-webkit-input-placeholder {
+  color: #bebebe; }
+
+/***************************************************              GENERAL STYLES             ***************************************************/
+h1 {
+  font: 35px sans-serif; }
+
+h2 {
+  font: 25px sans-serif; }
+
+h3 {
+  font: 23px sans-serif; }
+
+h4 {
+  font: 21px sans-serif; }
+
+h5 {
+  font: 18px sans-serif; }
+
+h6 {
+  font: 16px sans-serif; }
+
+/***************************************************/
+/***************************************************/
+body {
+  width: 100%; }
+
+.wrapper {
+  display: block;
+  width: 100%; }
+
+.layout {
+  display: block;
+  width: 80%;
+  margin: 0 auto; }
+
+.header {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  background: #2d2d2d; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .nav .n1 {
+    display: inline-block;
+    width: 20%;
+    height: 60px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff; }
+    .nav .n1 .n2 {
+      display: block;
+      width: 100%;
+      height: 60px;
+      text-align: center;
+      color: #fff; }
+  .nav .n2:hover {
+    height: 57px;
+    border-bottom: 3px solid #d07f0f;
+    background: #404656;
+    color: #d07f0f; }
+
+.banner {
+  display: block;
+  width: 100%; }
+
+.main {
+  display: block;
+  padding: 60px 0 80px 0;
+  background: #63baa9; }
+  .main .portfolio {
+    overflow: hidden; }
+    .main .portfolio h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 70px; }
+  .main ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .main ul li {
+      width: 32%;
+      height: 120px;
+      margin-top: 10px;
+      margin-right: 2%;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border-radius: 6px; }
+      .main ul li a h3 {
+        position: absolute;
+        bottom: 15%;
+        left: 2.5%;
+        color: #d1751a;
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 400; }
+      .main ul li a p {
+        position: absolute;
+        bottom: 5%;
+        left: 2.5%;
+        color: #4e4d4d;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400; }
+    .main ul li:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: 10; }
+    .main ul li:first-child {
+      width: 66%;
+      height: 240px;
+      background: #f7671d;
+      margin-top: 0; }
+      .main ul li:first-child a h3 {
+        position: absolute;
+        top: 10%;
+        left: 2.5%;
+        color: #fff;
+        font-size: 18px; }
+      .main ul li:first-child a p {
+        position: absolute;
+        bottom: 10%;
+        left: 2.5%;
+        color: #4e4d4d;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400; }
+    .main ul li:nth-child(2) {
+      height: 240px;
+      margin-top: 0;
+      margin-right: 0; }
+      .main ul li:nth-child(2) a h3 {
+        bottom: 7.5%; }
+      .main ul li:nth-child(2) a p {
+        bottom: 2.5%; }
+      .main ul li:nth-child(2) a img {
+        height: 100%; }
+    .main ul li:nth-child(3n+2) {
+      margin-right: 0; }
+
+.fotter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  background: #303646;
+  padding: 70px 0 20px 0; }
+  .fotter h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    margin-bottom: 40px; }
+  .fotter h2:after {
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 25%; }
+  .fotter .bottom_left {
+    float: left;
+    overflow: hidden;
+    width: 58%;
+    padding: 0 3% 0 2%; }
+    .fotter .bottom_left h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #d1751a;
+      position: relative; }
+    .fotter .bottom_left h3:after {
+      content: '';
+      background: #4e4d4d;
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 70%; }
+    .fotter .bottom_left form {
+      display: block;
+      margin-top: 30px;
+      width: 100%; }
+      .fotter .bottom_left form .name_email {
+        display: flex;
+        justify-content: space-between; }
+        .fotter .bottom_left form .name_email input {
+          width: 35%;
+          padding: 2.5% 5%;
+          border-radius: 3px;
+          border: none;
+          height: 24px; }
+      .fotter .bottom_left form textarea {
+        width: 90%;
+        padding: 2.5% 5%;
+        border-radius: 3px;
+        border: none;
+        margin-top: 20px;
+        height: 140px; }
+      .fotter .bottom_left form .butt {
+        float: right;
+        margin-top: 10px;
+        width: 25%; }
+        .fotter .bottom_left form .butt input {
+          width: 100%;
+          text-align: center;
+          background: #f7671d;
+          border: none;
+          border-radius: 3px;
+          padding: 5px 0;
+          color: #303646;
+          cursor: pointer; }
+  .fotter .bottom_right {
+    float: right;
+    overflow: hidden;
+    width: 35%; }
+    .fotter .bottom_right h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #d1751a;
+      position: relative; }
+    .fotter .bottom_right h3:after {
+      content: '';
+      background: #4e4d4d;
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0; }
+    .fotter .bottom_right .social_network_02 {
+      display: block;
+      margin: 30px 0; }
+      .fotter .bottom_right .social_network_02 li {
+        display: inline-block;
+        margin-right: 20px; }
+    .fotter .bottom_right .contact_information {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #d1751a;
+      position: relative; }
+    .fotter .bottom_right .contact_information:after {
+      content: '';
+      background: #4e4d4d;
+      width: 50%;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 30%; }
+    .fotter .bottom_right .information {
+      display: block;
+      margin: 30px 0 0 0; }
+      .fotter .bottom_right .information li {
+        display: block;
+        margin: 10px 0; }
+        .fotter .bottom_right .information li img {
+          float: left;
+          margin-right: 20px; }
+        .fotter .bottom_right .information li p {
+          color: #4e4d4d;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 27px; }
+
+.notebook {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2; }
+
+/*# sourceMappingURL=style.css.map */
