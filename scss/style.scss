@@ -302,18 +302,40 @@ body{
         float: right;
         overflow: hidden;
         width: 35%;
+        padding-left: 2%;
         h3{
             @include bottom_h3;
         }
         h3:after{
             @include bottom_h3_after;
         }
-        .social_network_02{
+        .botR1{
             display: block;
             margin: 30px 0;
-            li{
+            .botR11{
                 display: inline-block;
                 margin-right: 20px;
+                width: 27px;
+                height: 27px;
+                border-radius: 50%;
+                .botR111{
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                    img{
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        opacity: 0.7;
+                    }
+                    img:hover{
+                        opacity: 1;
+                        -webkit-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        transform: scale(1.2);
+                        z-index: 10;
+                    }
+                }
             }
         }
         .contact_information{
@@ -332,6 +354,16 @@ body{
                 img{
                     float: left;
                     margin-right: 20px;
+                    cursor: pointer;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                }
+                img:hover{
+                    -webkit-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+                    z-index: 10;
                 }
                 p{
                     color: #4e4d4d;
