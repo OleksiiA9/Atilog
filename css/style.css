@@ -85,7 +85,9 @@ body {
 
 .wrapper {
   display: block;
-  width: 100%; }
+  width: 100%; 
+  overflow: hidden;    
+}
 
 .layout {
   display: block;
