@@ -13,7 +13,7 @@ a{
 }*/
 
 .banner{
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -23,7 +23,7 @@ a{
 }
 .sl__text{
     position: absolute;
-    top: 140px;
+    bottom: 0;
     /*background: #000000;*/
     opacity: 1;
     width: 100%;
@@ -31,6 +31,7 @@ a{
     text-align: center;
     text-shadow: 1px 1px 1px #000000;
     padding: 20px 0;
+    margin-bottom: 40px;
 }
 .sl__zag, .sl__desc{
     margin: 0;
@@ -38,14 +39,14 @@ a{
 }
 .sl__zag{
     font-family: ;
-    font-size: 62px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
 } 
 .sl__desc{
     font-family: ;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     margin: 50px 0;
 }
@@ -59,6 +60,22 @@ a{
     font-weight: 700;
     color: #fff;
     cursor: pointer;
+}
+@media screen and (min-width: 640px) and (max-width: 899px) {
+    .sl__text{margin-bottom: 20px;}
+    .sl__zag{
+        font-size: 18px;
+    } 
+    .sl__desc{
+        font-size: 14px;
+    }
+    .sl__a{
+        text-decoration: none;
+        border: 3px solid #fff;
+        border-radius: 6px;
+        padding: 10px 25px;
+        font-size: 12px;
+    }
 }
 /*Адаптивность картинок и видео*/
 img{
