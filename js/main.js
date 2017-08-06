@@ -67,7 +67,9 @@ $(document).ready(function(){
 });
 });
 $(document).ready(function(){
-$('.sl').slick({	
-    
-});
-});      
+	$('.menu').click(function(){
+		$(this).toggleClass('active');
+		$('.nav').toggleClass('active');
+		return false;
+	});
+});  
